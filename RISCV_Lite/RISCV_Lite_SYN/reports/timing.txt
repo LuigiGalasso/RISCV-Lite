@@ -1,0 +1,199 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISCV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Wed Jan 22 12:38:06 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DP/EU/AddressW_reg/temp_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: DP/EU/ALUout_reg/temp_reg[63]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DP/EU/AddressW_reg/temp_reg[2]/CK (DFF_X1)              0.00 #     0.00 r
+  DP/EU/AddressW_reg/temp_reg[2]/Q (DFF_X1)               0.09       0.09 f
+  DP/EU/AddressW_reg/o[2] (reg64_4)                       0.00       0.09 f
+  DP/EU/AddressWtoMEMORY[2] (executeUnit)                 0.00       0.09 f
+  DP/FWU/EX_MEM_Register_Rd[2] (ForwardingUnit)           0.00       0.09 f
+  DP/FWU/U30/Z (XOR2_X1)                                  0.08       0.17 f
+  DP/FWU/U47/ZN (NOR4_X1)                                 0.07       0.24 r
+  DP/FWU/U4/ZN (AND2_X1)                                  0.05       0.29 r
+  DP/FWU/U12/ZN (NOR3_X1)                                 0.03       0.32 f
+  DP/FWU/ForwardB[0] (ForwardingUnit)                     0.00       0.32 f
+  DP/EU/ForwardB[0] (executeUnit)                         0.00       0.32 f
+  DP/EU/MUX31_2/sel[0] (Mux31_1)                          0.00       0.32 f
+  DP/EU/MUX31_2/U145/ZN (INV_X1)                          0.03       0.35 r
+  DP/EU/MUX31_2/U131/ZN (NOR2_X1)                         0.03       0.38 f
+  DP/EU/MUX31_2/U3/Z (BUF_X1)                             0.04       0.43 f
+  DP/EU/MUX31_2/U144/ZN (AOI222_X1)                       0.10       0.52 r
+  DP/EU/MUX31_2/U143/ZN (INV_X1)                          0.03       0.55 f
+  DP/EU/MUX31_2/y[0] (Mux31_1)                            0.00       0.55 f
+  DP/EU/ALUset/DATA2[0] (ALU)                             0.00       0.55 f
+  DP/EU/ALUset/add_42/B[0] (ALU_DW01_add_0)               0.00       0.55 f
+  DP/EU/ALUset/add_42/U288/ZN (AND2_X1)                   0.04       0.60 f
+  DP/EU/ALUset/add_42/U400/ZN (NAND2_X1)                  0.04       0.63 r
+  DP/EU/ALUset/add_42/U401/ZN (NAND3_X1)                  0.04       0.67 f
+  DP/EU/ALUset/add_42/U405/ZN (NAND2_X1)                  0.03       0.70 r
+  DP/EU/ALUset/add_42/U407/ZN (NAND3_X1)                  0.05       0.75 f
+  DP/EU/ALUset/add_42/U68/ZN (NAND2_X1)                   0.04       0.78 r
+  DP/EU/ALUset/add_42/U70/ZN (NAND3_X1)                   0.05       0.83 f
+  DP/EU/ALUset/add_42/U332/ZN (NAND2_X1)                  0.04       0.86 r
+  DP/EU/ALUset/add_42/U335/ZN (NAND3_X1)                  0.04       0.90 f
+  DP/EU/ALUset/add_42/U1_5/CO (FA_X1)                     0.10       1.00 f
+  DP/EU/ALUset/add_42/U291/ZN (NAND2_X1)                  0.03       1.03 r
+  DP/EU/ALUset/add_42/U294/ZN (NAND3_X1)                  0.05       1.08 f
+  DP/EU/ALUset/add_42/U29/ZN (NAND2_X1)                   0.04       1.12 r
+  DP/EU/ALUset/add_42/U31/ZN (NAND3_X1)                   0.05       1.16 f
+  DP/EU/ALUset/add_42/U241/ZN (NAND2_X1)                  0.04       1.20 r
+  DP/EU/ALUset/add_42/U44/ZN (NAND3_X1)                   0.04       1.24 f
+  DP/EU/ALUset/add_42/U282/ZN (NAND2_X1)                  0.03       1.28 r
+  DP/EU/ALUset/add_42/U285/ZN (NAND3_X1)                  0.03       1.31 f
+  DP/EU/ALUset/add_42/U1_10/CO (FA_X1)                    0.10       1.41 f
+  DP/EU/ALUset/add_42/U387/ZN (NAND2_X1)                  0.03       1.44 r
+  DP/EU/ALUset/add_42/U389/ZN (NAND3_X1)                  0.05       1.49 f
+  DP/EU/ALUset/add_42/U392/ZN (NAND2_X1)                  0.04       1.53 r
+  DP/EU/ALUset/add_42/U395/ZN (NAND3_X1)                  0.05       1.57 f
+  DP/EU/ALUset/add_42/U23/ZN (NAND2_X1)                   0.04       1.61 r
+  DP/EU/ALUset/add_42/U25/ZN (NAND3_X1)                   0.05       1.66 f
+  DP/EU/ALUset/add_42/U128/ZN (NAND2_X1)                  0.04       1.70 r
+  DP/EU/ALUset/add_42/U51/ZN (NAND3_X1)                   0.04       1.74 f
+  DP/EU/ALUset/add_42/U326/ZN (NAND2_X1)                  0.04       1.77 r
+  DP/EU/ALUset/add_42/U329/ZN (NAND3_X1)                  0.04       1.81 f
+  DP/EU/ALUset/add_42/U229/ZN (NAND2_X1)                  0.03       1.84 r
+  DP/EU/ALUset/add_42/U231/ZN (NAND3_X1)                  0.04       1.88 f
+  DP/EU/ALUset/add_42/U146/ZN (NAND2_X1)                  0.04       1.92 r
+  DP/EU/ALUset/add_42/U148/ZN (NAND3_X1)                  0.05       1.97 f
+  DP/EU/ALUset/add_42/U253/ZN (NAND2_X1)                  0.04       2.01 r
+  DP/EU/ALUset/add_42/U255/ZN (NAND3_X1)                  0.04       2.05 f
+  DP/EU/ALUset/add_42/U277/ZN (NAND2_X1)                  0.04       2.09 r
+  DP/EU/ALUset/add_42/U279/ZN (NAND3_X1)                  0.04       2.13 f
+  DP/EU/ALUset/add_42/U116/ZN (NAND2_X1)                  0.03       2.16 r
+  DP/EU/ALUset/add_42/U118/ZN (NAND3_X1)                  0.04       2.20 f
+  DP/EU/ALUset/add_42/U375/ZN (NAND2_X1)                  0.03       2.23 r
+  DP/EU/ALUset/add_42/U377/ZN (NAND3_X1)                  0.05       2.28 f
+  DP/EU/ALUset/add_42/U381/ZN (NAND2_X1)                  0.04       2.32 r
+  DP/EU/ALUset/add_42/U59/ZN (NAND3_X1)                   0.04       2.36 f
+  DP/EU/ALUset/add_42/U97/ZN (NAND2_X1)                   0.04       2.40 r
+  DP/EU/ALUset/add_42/U100/ZN (NAND3_X1)                  0.04       2.44 f
+  DP/EU/ALUset/add_42/U223/ZN (NAND2_X1)                  0.03       2.48 r
+  DP/EU/ALUset/add_42/U225/ZN (NAND3_X1)                  0.05       2.52 f
+  DP/EU/ALUset/add_42/U152/ZN (NAND2_X1)                  0.04       2.56 r
+  DP/EU/ALUset/add_42/U154/ZN (NAND3_X1)                  0.04       2.60 f
+  DP/EU/ALUset/add_42/U247/ZN (NAND2_X1)                  0.03       2.63 r
+  DP/EU/ALUset/add_42/U249/ZN (NAND3_X1)                  0.04       2.67 f
+  DP/EU/ALUset/add_42/U270/ZN (NAND2_X1)                  0.04       2.71 r
+  DP/EU/ALUset/add_42/U273/ZN (NAND3_X1)                  0.04       2.76 f
+  DP/EU/ALUset/add_42/U110/ZN (NAND2_X1)                  0.03       2.79 r
+  DP/EU/ALUset/add_42/U112/ZN (NAND3_X1)                  0.05       2.84 f
+  DP/EU/ALUset/add_42/U321/ZN (NAND2_X1)                  0.04       2.87 r
+  DP/EU/ALUset/add_42/U323/ZN (NAND3_X1)                  0.04       2.91 f
+  DP/EU/ALUset/add_42/U1_30/CO (FA_X1)                    0.10       3.01 f
+  DP/EU/ALUset/add_42/U362/ZN (NAND2_X1)                  0.04       3.05 r
+  DP/EU/ALUset/add_42/U2/ZN (NAND3_X1)                    0.04       3.09 f
+  DP/EU/ALUset/add_42/U369/ZN (NAND2_X1)                  0.03       3.12 r
+  DP/EU/ALUset/add_42/U11/ZN (NAND3_X1)                   0.04       3.16 f
+  DP/EU/ALUset/add_42/U91/ZN (NAND2_X1)                   0.04       3.20 r
+  DP/EU/ALUset/add_42/U94/ZN (NAND3_X1)                   0.04       3.24 f
+  DP/EU/ALUset/add_42/U211/ZN (NAND2_X1)                  0.04       3.28 r
+  DP/EU/ALUset/add_42/U213/ZN (NAND3_X1)                  0.04       3.32 f
+  DP/EU/ALUset/add_42/U217/ZN (NAND2_X1)                  0.03       3.35 r
+  DP/EU/ALUset/add_42/U219/ZN (NAND3_X1)                  0.05       3.39 f
+  DP/EU/ALUset/add_42/U158/ZN (NAND2_X1)                  0.04       3.43 r
+  DP/EU/ALUset/add_42/U160/ZN (NAND3_X1)                  0.05       3.48 f
+  DP/EU/ALUset/add_42/U178/ZN (NAND2_X1)                  0.04       3.51 r
+  DP/EU/ALUset/add_42/U180/ZN (NAND3_X1)                  0.05       3.56 f
+  DP/EU/ALUset/add_42/U35/ZN (NAND2_X1)                   0.04       3.60 r
+  DP/EU/ALUset/add_42/U37/ZN (NAND3_X1)                   0.05       3.64 f
+  DP/EU/ALUset/add_42/U315/ZN (NAND2_X1)                  0.04       3.68 r
+  DP/EU/ALUset/add_42/U317/ZN (NAND3_X1)                  0.04       3.72 f
+  DP/EU/ALUset/add_42/U104/ZN (NAND2_X1)                  0.03       3.75 r
+  DP/EU/ALUset/add_42/U106/ZN (NAND3_X1)                  0.04       3.80 f
+  DP/EU/ALUset/add_42/U351/ZN (NAND2_X1)                  0.03       3.83 r
+  DP/EU/ALUset/add_42/U353/ZN (NAND3_X1)                  0.05       3.88 f
+  DP/EU/ALUset/add_42/U357/ZN (NAND2_X1)                  0.04       3.92 r
+  DP/EU/ALUset/add_42/U55/ZN (NAND3_X1)                   0.04       3.96 f
+  DP/EU/ALUset/add_42/U85/ZN (NAND2_X1)                   0.03       3.99 r
+  DP/EU/ALUset/add_42/U88/ZN (NAND3_X1)                   0.04       4.03 f
+  DP/EU/ALUset/add_42/U265/ZN (NAND2_X1)                  0.04       4.07 r
+  DP/EU/ALUset/add_42/U267/ZN (NAND3_X1)                  0.05       4.12 f
+  DP/EU/ALUset/add_42/U17/ZN (NAND2_X1)                   0.04       4.15 r
+  DP/EU/ALUset/add_42/U19/ZN (NAND3_X1)                   0.05       4.20 f
+  DP/EU/ALUset/add_42/U205/ZN (NAND2_X1)                  0.04       4.24 r
+  DP/EU/ALUset/add_42/U163/ZN (NAND3_X1)                  0.04       4.28 f
+  DP/EU/ALUset/add_42/U172/ZN (NAND2_X1)                  0.04       4.31 r
+  DP/EU/ALUset/add_42/U54/ZN (NAND3_X1)                   0.04       4.36 f
+  DP/EU/ALUset/add_42/U80/ZN (NAND2_X1)                   0.04       4.39 r
+  DP/EU/ALUset/add_42/U47/ZN (NAND3_X1)                   0.04       4.43 f
+  DP/EU/ALUset/add_42/U303/ZN (NAND2_X1)                  0.03       4.46 r
+  DP/EU/ALUset/add_42/U305/ZN (NAND3_X1)                  0.04       4.50 f
+  DP/EU/ALUset/add_42/U1_50/CO (FA_X1)                    0.10       4.60 f
+  DP/EU/ALUset/add_42/U339/ZN (NAND2_X1)                  0.03       4.63 r
+  DP/EU/ALUset/add_42/U341/ZN (NAND3_X1)                  0.05       4.68 f
+  DP/EU/ALUset/add_42/U345/ZN (NAND2_X1)                  0.04       4.71 r
+  DP/EU/ALUset/add_42/U347/ZN (NAND3_X1)                  0.05       4.76 f
+  DP/EU/ALUset/add_42/U309/ZN (NAND2_X1)                  0.04       4.80 r
+  DP/EU/ALUset/add_42/U311/ZN (NAND3_X1)                  0.05       4.84 f
+  DP/EU/ALUset/add_42/U122/ZN (NAND2_X1)                  0.04       4.88 r
+  DP/EU/ALUset/add_42/U124/ZN (NAND3_X1)                  0.04       4.92 f
+  DP/EU/ALUset/add_42/U235/ZN (NAND2_X1)                  0.04       4.96 r
+  DP/EU/ALUset/add_42/U237/ZN (NAND3_X1)                  0.04       5.00 f
+  DP/EU/ALUset/add_42/U258/ZN (NAND2_X1)                  0.04       5.04 r
+  DP/EU/ALUset/add_42/U188/ZN (NAND3_X1)                  0.04       5.08 f
+  DP/EU/ALUset/add_42/U193/ZN (NAND2_X1)                  0.04       5.11 r
+  DP/EU/ALUset/add_42/U195/ZN (NAND3_X1)                  0.04       5.15 f
+  DP/EU/ALUset/add_42/U200/ZN (NAND2_X1)                  0.03       5.18 r
+  DP/EU/ALUset/add_42/U201/ZN (NAND3_X1)                  0.05       5.23 f
+  DP/EU/ALUset/add_42/U140/ZN (NAND2_X1)                  0.04       5.26 r
+  DP/EU/ALUset/add_42/U142/ZN (NAND3_X1)                  0.05       5.31 f
+  DP/EU/ALUset/add_42/U167/ZN (NAND2_X1)                  0.04       5.35 r
+  DP/EU/ALUset/add_42/U52/ZN (NAND3_X1)                   0.04       5.39 f
+  DP/EU/ALUset/add_42/U73/ZN (NAND2_X1)                   0.04       5.43 r
+  DP/EU/ALUset/add_42/U45/ZN (NAND3_X1)                   0.04       5.47 f
+  DP/EU/ALUset/add_42/U298/ZN (NAND2_X1)                  0.03       5.50 r
+  DP/EU/ALUset/add_42/U39/ZN (AND3_X1)                    0.05       5.55 r
+  DP/EU/ALUset/add_42/U40/ZN (XNOR2_X1)                   0.03       5.58 f
+  DP/EU/ALUset/add_42/SUM[63] (ALU_DW01_add_0)            0.00       5.58 f
+  DP/EU/ALUset/U546/ZN (AOI22_X1)                         0.04       5.63 r
+  DP/EU/ALUset/U545/ZN (NAND2_X1)                         0.03       5.66 f
+  DP/EU/ALUset/OUTALU[63] (ALU)                           0.00       5.66 f
+  DP/EU/ALUout_reg/i[63] (reg64_6)                        0.00       5.66 f
+  DP/EU/ALUout_reg/U143/ZN (AOI22_X1)                     0.04       5.70 r
+  DP/EU/ALUout_reg/U142/ZN (INV_X1)                       0.02       5.72 f
+  DP/EU/ALUout_reg/temp_reg[63]/D (DFF_X1)                0.01       5.73 f
+  data arrival time                                                  5.73
+
+  clock MY_CLK (rise edge)                                5.84       5.84
+  clock network delay (ideal)                             0.00       5.84
+  clock uncertainty                                      -0.07       5.77
+  DP/EU/ALUout_reg/temp_reg[63]/CK (DFF_X1)               0.00       5.77 r
+  library setup time                                     -0.04       5.73
+  data required time                                                 5.73
+  --------------------------------------------------------------------------
+  data required time                                                 5.73
+  data arrival time                                                 -5.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
