@@ -1,0 +1,274 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Thu Jan 23 19:55:22 2020
+Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+OS:		CentOS Linux release 7.6.1810 (Core) 
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+my_rc
+Loading view definition file from /home/isa07/LAB3/RISCV_withSpecialUnit/innovus/riscv.enc.dat/viewDefinition.tcl
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+*** End library_loading (cpu=0.03min, real=0.03min, mem=37.9M, fe_cpu=0.60min, fe_real=2.27min, fe_mem=540.6M) ***
+*** Netlist is unique.
+Loading preference file /home/isa07/LAB3/RISCV_withSpecialUnit/innovus/riscv.enc.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (TCLNL-330):	set_input_delay on clock root 'Clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/isa07/LAB3/RISCV_withSpecialUnit/innovus/riscv.enc.dat/libs/mmmc/riscv.sdc, Line 205).
+
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+'set_default_switching_activity' finished successfully.
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//riscv.rpt
+
+Power Net Detected:
+    Voltage	    Name
+    0.00V	    VSS
+    1.10V	    VDD
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: riscv
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'riscv' of instances=51154 and nets=17187 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PostRoute (effortLevel low) RC Extraction called for design riscv.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: my_rc
+extractDetailRC Option : -outfile /tmp/innovus_temp_28846_localhost.localdomain_isa07_QBwK20/riscv_28846_RRND98.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 896.8M)
+Extracted 10.0009% (CPU Time= 0:00:00.5  MEM= 977.1M)
+Extracted 20.0008% (CPU Time= 0:00:00.7  MEM= 981.1M)
+Extracted 30.0008% (CPU Time= 0:00:00.8  MEM= 981.1M)
+Extracted 40.0007% (CPU Time= 0:00:01.0  MEM= 984.1M)
+Extracted 50.0007% (CPU Time= 0:00:01.3  MEM= 987.1M)
+Extracted 60.0007% (CPU Time= 0:00:01.5  MEM= 990.1M)
+Extracted 70.0006% (CPU Time= 0:00:01.8  MEM= 993.1M)
+Extracted 80.0006% (CPU Time= 0:00:02.2  MEM= 995.1M)
+Extracted 90.0005% (CPU Time= 0:00:02.5  MEM= 1001.2M)
+Extracted 100% (CPU Time= 0:00:03.5  MEM= 1007.2M)
+Number of Extracted Resistors     : 326612
+Number of Extracted Ground Cap.   : 343340
+Number of Extracted Coupling Cap. : 531456
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+ Corner: my_rc
+Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 991.1M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:04.5  Real Time: 0:00:04.0  MEM: 991.133M)
+AAE_INFO: 1 threads acquired from CTE.
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=991.133)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+AAE_INFO: 1 threads acquired from CTE.
+Total number of fetched objects 20083
+AAE_INFO-618: Total number of nets in the design is 17187,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1221.34 CPU=0:00:13.0 REAL=0:00:13.0)
+End delay calculation (fullDC). (MEM=1125.97 CPU=0:00:14.0 REAL=0:00:14.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1124.0M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.2, REAL = 0:00:00.0, MEM = 1124.0M)
+Starting SI iteration 2
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1132.02)
+Glitch Analysis: View MyAnView -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View MyAnView -- Total Number of Nets Analyzed = 20083. 
+Total number of fetched objects 20083
+AAE_INFO-618: Total number of nets in the design is 17187,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1100.02 CPU=0:00:00.5 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1100.02 CPU=0:00:00.5 REAL=0:00:00.0)
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    1.10V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=926.27MB/926.27MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+MY_CLK(171.233MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=926.39MB/926.39MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=926.44MB/926.44MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT)
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 10%
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 20%
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 30%
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 40%
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 50%
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 60%
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 70%
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 80%
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT): 90%
+
+Finished Levelizing
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT)
+
+Starting Activity Propagation
+2020-Jan-23 19:58:56 (2020-Jan-23 18:58:56 GMT)
+2020-Jan-23 19:58:57 (2020-Jan-23 18:58:57 GMT): 10%
+2020-Jan-23 19:58:57 (2020-Jan-23 18:58:57 GMT): 20%
+2020-Jan-23 19:58:57 (2020-Jan-23 18:58:57 GMT): 30%
+2020-Jan-23 19:58:57 (2020-Jan-23 18:58:57 GMT): 40%
+2020-Jan-23 19:58:57 (2020-Jan-23 18:58:57 GMT): 50%
+2020-Jan-23 19:58:57 (2020-Jan-23 18:58:57 GMT): 60%
+2020-Jan-23 19:58:58 (2020-Jan-23 18:58:58 GMT): 70%
+2020-Jan-23 19:58:58 (2020-Jan-23 18:58:58 GMT): 80%
+2020-Jan-23 19:58:58 (2020-Jan-23 18:58:58 GMT): 90%
+
+Finished Activity Propagation
+2020-Jan-23 19:58:58 (2020-Jan-23 18:58:58 GMT)
+Ended Processing Signal Activity: (cpu=0:00:02, real=0:00:02, mem(process/total)=926.70MB/926.70MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2020-Jan-23 19:58:58 (2020-Jan-23 18:58:58 GMT)
+ ... Calculating switching power
+2020-Jan-23 19:58:58 (2020-Jan-23 18:58:58 GMT): 10%
+2020-Jan-23 19:58:58 (2020-Jan-23 18:58:58 GMT): 20%
+2020-Jan-23 19:58:59 (2020-Jan-23 18:58:59 GMT): 30%
+2020-Jan-23 19:58:59 (2020-Jan-23 18:58:59 GMT): 40%
+2020-Jan-23 19:58:59 (2020-Jan-23 18:58:59 GMT): 50%
+ ... Calculating internal and leakage power
+2020-Jan-23 19:59:00 (2020-Jan-23 18:59:00 GMT): 60%
+2020-Jan-23 19:59:02 (2020-Jan-23 18:59:02 GMT): 70%
+2020-Jan-23 19:59:03 (2020-Jan-23 18:59:03 GMT): 80%
+2020-Jan-23 19:59:05 (2020-Jan-23 18:59:05 GMT): 90%
+
+Finished Calculating power
+2020-Jan-23 19:59:06 (2020-Jan-23 18:59:06 GMT)
+Ended Power Computation: (cpu=0:00:08, real=0:00:08, mem(process/total)=927.07MB/927.07MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=927.07MB/927.07MB)
+
+Ended Power Analysis: (cpu=0:00:11, real=0:00:11, mem(process/total)=927.12MB/927.12MB)
+
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        4.31570000 	   63.8869%
+Total Switching Power:       1.83187757 	   27.1180%
+Total Leakage Power:         0.60763687 	    8.9951%
+Total Power:                 6.75521444
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=927.41MB/927.41MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:02, real=0:00:02,
+mem(process/total)=927.49MB/927.49MB)
+
+Output file is .//riscv.rpt.
+<CMD> report_power -outfile FINALPOWER.rpt -sort { total }
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        4.31570000 	   63.8869%
+Total Switching Power:       1.83187757 	   27.1180%
+Total Leakage Power:         0.60763687 	    8.9951%
+Total Power:                 6.75521444
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=927.63MB/927.63MB)
+
+
+Output file is .//FINALPOWER.rpt.
